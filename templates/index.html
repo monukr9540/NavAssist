@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="{{url_for('static',filename='css/style.css')}}"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="flex m-4 flex-col">
+      <h1 class="text-blue-900 font-bold mx-auto">SightSavvy</h1>
+      <div class="border-red-950 border border-spacing-3">
+        <img src="{{ url_for('video_feed') }}" class="border-black" />
+      </div>
+    </div>
+  </body>
+</html>
